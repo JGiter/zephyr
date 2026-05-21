@@ -1,0 +1,10 @@
+common:
+  tags:
+    - drivers
+    - i2c
+  depends_on: i2c
+tests:
+  drivers.i2c.lsm6dsl:
+    # filter: dt_compat_enabled("st,lsm6dsl")
+    platform_allow:
+      - xiao_ble/nrf52840/sense

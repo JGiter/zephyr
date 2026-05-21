@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2022-2023 Marcin Niestroj
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+
+/ {
+	aliases {
+		i2c-0 = &i2c0;
+		lsm6dsl = &lsm6ds3tr_c;
+	};
+};
+
+&i2c0 {
+	compatible = "nordic,nrf-twim";
+};
